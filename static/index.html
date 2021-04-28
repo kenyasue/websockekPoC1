@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatTest</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="menu">
+            <h1 id="channel"></h1>
+            <p id="welcome" class="welcome">Welcome,<b></b></p>
+        </div>
+
+        <div id="chatbox"></div>
+
+        <form name="message" onsubmit="send(); return false;">
+            <input name="usermsg" type="text" id="usermsg" />
+            <input name="submitmsg" type="button"id="submitmsg" value="Send" onclick="send();"/>
+        </form>
+    </div>
+    <script src="scripts/MyWebsocket.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
